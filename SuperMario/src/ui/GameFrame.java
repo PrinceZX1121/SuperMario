@@ -49,7 +49,7 @@ public class GameFrame extends JFrame{
 		this.setVisible(true);
 
 		// 创建玛丽对象
-		mario = new Mario(this);
+//		mario = new Mario(this);
 
 		// 创建背景图片
 		bg = new BackgroundImage();
@@ -77,7 +77,7 @@ public class GameFrame extends JFrame{
 			}
 		}
 
-		mario.start();
+//		mario.start();
 
 		//开启一个线程负责界面的窗体重绘线程
 		new Thread(){
@@ -120,13 +120,13 @@ public class GameFrame extends JFrame{
 		}
 
 		//画子弹
-		for (int i = 0; i < boomList.size(); i++) {
-			Boom b =boomList.get(i);
-			Color c =big.getColor();
-			big.setColor(Color.red);
-			big.fillOval(b.x+=b.speed, b.y, b.width, b.width);
-			big.setColor(c);
-		}
+//		for (int i = 0; i < boomList.size(); i++) {
+//			Boom b =boomList.get(i);
+//			Color c =big.getColor();
+//			big.setColor(Color.red);
+//			big.fillOval(b.x+=b.speed, b.y, b.width, b.width);
+//			big.setColor(c);
+//		}
 
 		//画人物 玛丽自己
 		big.drawImage(mario.img, mario.x, mario.y, mario.width, mario.height,null);

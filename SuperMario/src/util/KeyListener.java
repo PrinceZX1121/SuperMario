@@ -31,9 +31,9 @@ public class KeyListener extends KeyAdapter{
 			case 37:
 				gf.mario.left=true;
 				break;
-			case 66:
-				addBoom();
-				break;
+//			case 66:
+//				addBoom();
+//				break;
 			//向上跳
 			case 38:
 				gf.mario.up=true;
@@ -42,12 +42,12 @@ public class KeyListener extends KeyAdapter{
 	}
 	
 	//添加子弹
-	public void addBoom() {	
-		Boom b = new Boom(gf.mario.x,gf.mario.y+5,10);
-		if(gf.mario.left) b.speed=-2;
-		if(gf.mario.right) b.speed=2;
-		gf.boomList.add(b);
-	}
+//	public void addBoom() {
+//		Boom b = new Boom(gf.mario.x,gf.mario.y+5,10);
+//		if(gf.mario.left) b.speed=-2;
+//		if(gf.mario.right) b.speed=2;
+//		gf.boomList.add(b);
+//	}
 
 	//键盘释放监听
 	@Override
